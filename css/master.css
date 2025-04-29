@@ -1,0 +1,250 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body
+{
+    font-family: sans-serif;
+    background-color: #E5E5E5;
+}
+header
+{
+    display: grid;
+    justify-items: center;
+}
+h1
+{
+    font-weight: 700;
+    font-size: 48px;
+    margin: 20px 0;
+    color: #7073EC;
+}
+header p
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 793px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.items, .item
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+main
+{
+    display: flex;
+    justify-content: center;
+}
+.items
+{
+    margin: 30px 0;
+    width: 80%;
+}
+
+.item
+{
+    width: 50%;
+    display: flex;
+    margin: 30px 0;
+}
+
+.item img
+{
+    margin: 0 20px;
+    width: 235px;
+    height: 235px;
+}
+.item a
+{
+    font-size: x-large;
+    font-weight: bolder;
+    color: #000000;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.price
+{
+    margin: 25px 0;
+    color:#7073EC;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+button
+{
+    margin-top: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    font-weight: bolder;
+    background-color: #E5E5E5;
+}
+button:hover
+{
+    color: #ffffff;
+    background-color: #000000;
+}
+.item div
+{
+    width: 50%;
+}
+
+footer
+{
+    font-size: small;
+    color: #ffffff;
+    display: grid;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333333;
+}
+footer a
+{
+    color:#B3CDF7;
+    text-decoration: underline;
+}
+footer a:hover
+{
+    text-decoration: none;
+    color: gray;
+}
+
+                /*Phones portrait*/
+@media(min-width:0) and (max-width:575px) 
+{
+    header
+    {
+        padding: 30px 40px;
+    }
+    .item
+    {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    .item-details
+    {
+       padding: 10px 20px;
+    }
+}
+
+
+                /*Phones lanscape*/
+@media(min-width: 576px) and (max-width: 767px)
+{
+    header
+    {
+        padding: 30px 40px;
+    }
+    .item
+    {
+        padding: 0;
+        display: flex;
+        width: 100%;
+    }
+    .item img
+    {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    button
+    {
+        margin-top: 8px;
+        padding: 10px 25px;
+    }
+
+    .price
+    {
+    margin: 15px 0;
+    }
+}
+
+
+                /*Tablets*/
+@media(min-width: 768px) and (max-width: 991px)
+{
+    header
+    {
+        padding: 30px 40px;
+    }
+    .item
+    {
+        width: 100%;
+        display: flex;
+    }
+    .item div
+    {
+        max-width: 40%;
+    }
+    .item-details
+    {
+        padding: 20px 40px;
+    }
+    button
+    {
+        margin-top: 6px;
+        padding: 10px 25px;
+    }
+    .price
+    {
+    margin: 15px 0;
+    }
+}
+
+                /*Small laptops*/
+@media(min-width: 992px) and (max-width: 1199px)
+{
+    .items
+    {
+        width: 90%;
+    }
+    .item div
+    {
+        max-width: 45%;
+    }
+    .item-details
+    {
+        margin-left: 25px;
+    }
+    .item img
+    {
+        max-width: 190px;
+        max-height: 190px;
+    }
+    .price
+    {
+        margin: 6px 0;
+    }
+    /* footer
+    {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    } */
+}
+
+                /*Desktops*/
+@media(min-width: 1200px) and (max-width: 1399px)
+{
+    .item-details
+    {
+        margin-left: 90px;
+    }
+    .item div
+    {
+        max-width: 40%;
+    }
+}
